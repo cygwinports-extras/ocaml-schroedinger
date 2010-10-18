@@ -1,0 +1,15 @@
+SVN_URI="https://savonet.svn.sourceforge.net/svnroot/savonet/trunk/${PN}"
+SVN_BRANCH=/
+inherit ocaml svn
+
+DESCRIPTION="OCaml bindings for Schroedinger Dirac library"
+HOMEPAGE="http://savonet.sourceforge.net/"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}
