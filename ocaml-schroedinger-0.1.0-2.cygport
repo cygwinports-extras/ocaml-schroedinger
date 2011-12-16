@@ -1,13 +1,10 @@
-SVN_URI="https://savonet.svn.sourceforge.net/svnroot/savonet/trunk/${PN}"
-SVN_BRANCH=/
-inherit ocaml svn
+inherit ocaml
 
 DESCRIPTION="OCaml bindings for Schroedinger Dirac library"
 HOMEPAGE="http://savonet.sourceforge.net/"
+SRC_URI="mirror://sourceforge/savonet/${P}.tar.gz"
 
 src_compile() {
-	cd ${S}
-	cygautoreconf
 	lndirs
 	cd ${B}
 	cygconf
