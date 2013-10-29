@@ -2,7 +2,7 @@ inherit ocaml
 
 NAME="ocaml-schroedinger"
 VERSION=0.1.0
-RELEASE=2
+RELEASE=3
 CATEGORY="Libs"
 SUMMARY="OCaml Schroedinger Dirac bindings"
 DESCRIPTION="This package contains an O'Caml interface for the Schroedinger
