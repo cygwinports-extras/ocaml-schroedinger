@@ -1,0 +1,18 @@
+inherit ocaml
+
+NAME="ocaml-schroedinger"
+VERSION=0.1.0
+RELEASE=2
+CATEGORY="Libs"
+SUMMARY="OCaml Schroedinger Dirac bindings"
+DESCRIPTION="This package contains an O'Caml interface for the Schroedinger
+Dirac codec library."
+HOMEPAGE="http://savonet.sourceforge.net/"
+SRC_URI="mirror://sourceforge/savonet/${NAME}-${VERSION}.tar.gz"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygconf
+	cygmake -j1
+}

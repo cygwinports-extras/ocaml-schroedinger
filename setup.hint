@@ -1,5 +1,0 @@
-category: Audio OCaml
-requires: libschroedinger1.0_0 libschroedinger1.0-devel ocaml-base ocaml-ogg
-sdesc: "OCaml Schroedinger Dirac bindings"
-ldesc: "This package contains an O'Caml interface for the Schroedinger 
-Dirac codec library."
